@@ -5,3 +5,7 @@
 .right_shadow {
   
 }
+
+ul {
+  list-style-image: url('sqpurple.gif');
+}
