@@ -16,6 +16,8 @@
 
 .card {
   border: 3px solid #000000;
+  padding: 24px 30px 20px 36px;
+  max-width: 900px;
   
   /* font */
   font-family: Poppins;
@@ -27,6 +29,8 @@
 
 button {
   border: 4px solid #000000;
+  padding: 0px 48px 0px 48px;
+  box-sizing: border-box;
   
   /* font */
   font-family: Poppins;
@@ -39,6 +43,7 @@ button {
   display: flex;
   align-items: center;
   text-align: center;
+  align-self: flex-end;
 }
 
 ul {
@@ -51,6 +56,7 @@ h2 {
   font-weight: 900;
   font-size: 25px;
   line-height: 37px;
+  padding: 0;
 }
 
 body {
