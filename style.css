@@ -1,11 +1,60 @@
 .left_shadow {
-  
+  box-shadow: -6px 4px 0px rgba(0, 0, 0, 0.54);
 }
 
 .right_shadow {
+  box-shadow: 5px 4px 0px rgba(0, 0, 0, 0.54);
+}
+
+.pink {
+  background: #FDEAFF;
+}
+
+.yellow {
+  background: #F9F595;
+}
+
+.card {
+  border: 3px solid #000000;
   
+  /* font */
+  font-family: Poppins;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+}
+
+button {
+  border: 4px solid #000000;
+  
+  /* font */
+  font-family: Poppins;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 37px;
+  
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 ul {
   list-style-image: url('sqpurple.gif');
+}
+
+h2 {
+  font-family: Poppins;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 37px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
