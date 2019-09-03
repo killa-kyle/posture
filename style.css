@@ -81,8 +81,10 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  background: #F064FF;
+a:hover, button:hover {
+/*   background: #F064FF; */
+  cursor: pointer;
+  background: red;
 }
 
 .a_righttext {
