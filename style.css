@@ -109,6 +109,7 @@ h2 {
 
 img {
   margin-bottom: 24px;
+  padding: 0 20px 0 20px;
 }
 
 body {
@@ -118,9 +119,9 @@ body {
   color: black;
 }
 
-#name {
+#name_img {
   display: flex;
-  align-content: space-around;
+  align-content: space-between;
 }
 
 /* #head {
