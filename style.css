@@ -35,7 +35,16 @@
 
 .double_cards {
   display: flex;
-  flex-direction: row;
+  
+}
+
+.small {
+  max-width: 378px;
+  max-height: 100px;
+}
+
+.middle {
+  max-width: 476px;
 }
 
 button {
@@ -76,11 +85,11 @@ a:hover {
 }
 
 .a_righttext {
-  padding: 4px 4px 4px 12px;
+  padding: 0px 4px 0px 12px;
 }
 
 .a_lefttext {
-  padding: 4px 12px 4px 4px;
+  padding: 0px 12px 0px 4px;
 }
 
 ul {
@@ -113,8 +122,8 @@ body {
   align-content: space-around;
 }
 
-#head {
+/* #head {
   display: flex;
   align-self: center;
   flex-direction: column;
-}
+} */
