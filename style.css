@@ -120,7 +120,7 @@ a:hover, button:hover {
 }
 
 ul {
-  list-style-type: hiragana-iroha;
+/*   list-style-type: hiragana-iroha; */
   list-style-type: katakana;
 }
 
@@ -184,6 +184,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+#firstCodeSection {
+  margin-top: 40px;
 }
 
 #solution {
