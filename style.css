@@ -66,6 +66,8 @@ button {
   text-align: center;
 }
 
+button:before {background: black;}
+
 a {
   border: 4px solid #000000;
   box-sizing: border-box;
@@ -107,6 +109,11 @@ h2 {
   line-height: 37px;
   padding: 0;
   margin: 0;
+}
+
+p {
+/*   margin: 0; */
+  padding: 0;
 }
 
 img {
