@@ -1,10 +1,9 @@
 var reminderText = document.getElementById('reminderText');
 function reminder() {
-  // reminderText.style.transition= '0.3s';
-  reminderText.style.textDecoration = 'underline';
-  reminderText.style.textDecorationColor = 'red';
+  reminderText.style.transition= '0.3s';
+  reminderText.style.borderBottom = 'thick solid red';
 }
 
 function reminderOff() {
-  reminderText.style.textDecoration = 'none';
+  reminderText.style.borderBottom = 'none';
 }
