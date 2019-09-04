@@ -111,6 +111,20 @@ ul {
   list-style-image: url('sqpurple.gif');
 }
 
+/* SECTION NAME */
+h1 {
+  font-family: Poppins;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 75px;
+
+  color: #FDEAFF;
+
+  border: 3px solid #000000;
+}
+
+/* SMALL BLACK HEADER */
 h2 {
   font-family: Poppins;
   font-style: italic;
@@ -145,4 +159,8 @@ body {
 
 #startbuttonCont {
   padding-top: 25px;
+}
+
+#creationprocessHeader {
+  margin-left: 20px;
 }
