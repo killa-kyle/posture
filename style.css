@@ -38,6 +38,17 @@
   line-height: 37px;
 }
 
+.textblock {
+  padding: 24px 30px 20px 36px;
+  margin-bottom: 1em;
+  max-width: 900px;
+  
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+}
+
 /* ADDITIONAL CARD SETTINGS */
 .right_align {
   display: flex;
@@ -171,7 +182,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-/*   justify-content: flex-start; */
 }
 
 @media only screen and (max-width: 810px) {
