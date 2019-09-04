@@ -121,7 +121,7 @@ h1 {
 
   color: #FDEAFF;
 
-  border: 3px solid #000000;
+  -webkit-text-stroke: 3px black;
 }
 
 /* SMALL BLACK HEADER */
@@ -163,4 +163,12 @@ body {
 
 #creationprocessHeader {
   margin-left: 20px;
+}
+
+#firstDesignSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
 }
