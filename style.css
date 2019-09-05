@@ -79,9 +79,8 @@
   max-height: 250px;
 }
 
-.space {
-  width: 16px;
-  height: 1px;
+.code_explain {
+  border-bottom: thick solid red;
 }
 
 button {
