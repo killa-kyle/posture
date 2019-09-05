@@ -254,6 +254,35 @@
           New goal was — get the first right eye position when the human is sitting with good posture, then track eye when the human moves and check the difference between current eye position and default position. And to do it with left eye.
         </p>
       </div>
+      <div class="code right_shadow">
+        <p>    
+        var rightEye, defaultRightEyePosition = [],</br>
+        function drawEyes()  {</br>
+        <span class="comment">// Loop through all the poses detected</span></br>
+        for (let i = 0; i < poses.length; i++) {</br>
+        <span class="comment">// For each pose detected, loop through all the keypoints</span></br>
+            let pose = poses[i].pose;</br>
+            for (let j = 0; j < pose.keypoints.length; j++) {</br>
+            <span class="comment">// A keypoint is an object describing a body part (like rightArm or leftShoulder)</span></br>
+        let keypoint = pose.keypoints[j];</br>
+        <span class="comment">//Detect right eye position</span></br>
+        rightEye = pose.keypoints[2].position;</br>
+        <span class="comment">//Position of eyes when after a human has pressed the button “start”. Default position.</span></br>
+        while (defaultRightEyePosition.length < 1) {</br>
+            defaultRightEyePosition.push(rightEye.y);</br>
+        }</br>
+        <span class="comment">//Compare default position with current position. If the difference more than 15, it means a person doesn't keep good posture and program calls the function that blurs screen.</span></br>
+        <span class="comment">//Math.abs converts a negative number to a positive one. Negative numbers appears when a human stand up </span></br>
+        if (Math.abs(rightEye.y - defaultRightEyePosition[0]) > 15) {</br>
+            blurScreen();</br>
+        }</br>
+        <span class="comment">//Compare default position with current position. If the difference become less than 15, it means the person improved posture and program calls the function that removes screen.</span></br>
+        if (Math.abs(rightEye.y - defaultRightEyePosition[0]) < 15) {</br>
+            removeBlur();</br>
+        }</br>
+}
+        </p>
+      </div>
     </div>
     <div id="videoContainer">
       

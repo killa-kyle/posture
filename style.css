@@ -53,6 +53,7 @@
 .code {
   border: 3px solid #000000;
   padding: 16px 16px 16px 24px;
+  max-width: 900px;
   
   font-family: 'VT323', monospace;
   font-size: 25px;
@@ -81,6 +82,10 @@
 
 .code_explain {
   border-bottom: thick solid red;
+}
+
+.comment {
+  color: gray;
 }
 
 button {
