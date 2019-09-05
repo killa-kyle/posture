@@ -8,7 +8,13 @@ function reminderOff() {
   reminderText.style.borderBottom = 'none';
 }
 
-//second UX experiment
-function 
+
+function highlightCode() {
+  
+}
+
+function removeHighlight() {
+  
+}
 
 
