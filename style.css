@@ -171,6 +171,10 @@ img {
   padding: 0 20px 0 20px;
 }
 
+.design_img {
+  max-width: 900px;
+}
+
 body {
   display: flex;
   align-items: center;
