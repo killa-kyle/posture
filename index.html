@@ -255,10 +255,33 @@
         </p>
       </div>
       <div class="code right_shadow">
-        <p>    
-        
+        <p> 
+          <span class="comment">//Position of eyes when after a human has pressed the button “start”. Default position.</span></br>
+        while (defaultRightEyePosition.length < 1) {</br>
+          defaultRightEyePosition.push(rightEye.y);</br>
+        }
         </p>
-      </div>
+        <p>
+          <span class="comment">//Compare default position with current position. If the difference more than 15, it means a person doesn't keep good posture and program calls the function that blurs screen.</span></br>
+          if (Math.abs(rightEye.y - defaultRightEyePosition[0]) > 15) {</br>
+            blurScreen();</br>
+          }
+        </p>
+        <p>
+          <span class="comment">//If the difference less than 15, it means a person is sitting with correct posture.</span>
+          if (Math.abs(rightEye.y - defaultRightEyePosition[0]) < 15) {</br>
+            removeBlur();</br>
+          }</br>
+        </p>
+        </div>
+        <div class="textblock">
+           <p>
+             Cool! Despite the fact that it tracks only right eye, it works well like a monster in a dark forest where everyone wants to eat you!
+           </p>
+           <p>
+             
+           </p>
+        </div>
     </div>
     <div id="videoContainer">
       
