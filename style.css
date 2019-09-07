@@ -3,16 +3,16 @@
   box-shadow: -6px 4px 0px rgba(0, 0, 0, 0.54);
 }
 
-.left_shadow: hover {
-  box-shadow: -6px 4px 0px rgba(0, 0, 0, 0.54);
+.left_shadow: active {
+  box-shadow: -3px 3px 0px rgba(0, 0, 0, 0.54);
 }
 
 .right_shadow {
   box-shadow: 5px 4px 0px rgba(0, 0, 0, 0.54);
 }
 
-.right_shadow: hover {
-  box-shadow: 5px 4px 0px rgba(0, 0, 0, 0.54);
+.right_shadow: active {
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.54);
 }
 
 /* CARD SETTTTTTINGS */
