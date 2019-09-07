@@ -3,7 +3,7 @@
   box-shadow: -6px 4px 0px rgba(0, 0, 0, 0.54);
 }
 
-.left_shadow: active {
+.left_shadow:active {
   box-shadow: -3px 3px 0px rgba(0, 0, 0, 0.54);
 }
 
@@ -11,7 +11,7 @@
   box-shadow: 5px 4px 0px rgba(0, 0, 0, 0.54);
 }
 
-.right_shadow: active {
+.right_shadow:active {
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.54);
 }
 
@@ -104,6 +104,10 @@ button {
   display: flex;
   align-items: center;
   text-align: center;
+}
+
+button: active {
+  outline: none;
 }
 
 a {
