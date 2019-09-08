@@ -38,10 +38,9 @@ function start() {
 // This function stops the experiment
 function stop() {
   select('#startbutton').html('start')
+  document.getElementById('startbutton').addEventListener('click', start);
   started = false;
   noLoop();
-  document.getElementById('startbutton').addEventListener('click', start);
-  console.log('dldl');
 }
 
 function draw() {
