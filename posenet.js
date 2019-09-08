@@ -28,7 +28,7 @@ function setup() {
 }
 
 function start(){
-  
+   select('#startbutton').html('stop')
    started = true;
    loop();
 }
