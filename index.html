@@ -231,7 +231,7 @@
           At first, I want to repeat that I used TensorFlow.js PoseNet model that tracks body parts and gives an array of parts’ positions (x, y).
         </p>
         <p>
-          I had two ways how to create this experiment:
+          I had two ways how to track poor posture:
         </p>
         <ul>
           <li>Create a model and teach it understand when a human keeps incorrect position. This variant doesn't request PoseNet.</li>
@@ -249,17 +249,21 @@
           Let’s imagine logical part of this idea.
         </p>
         <p>
-          When a human keeps incorrect posture, positions of eyes and shoulders will decrease (on y).
+          When a human keeps incorrect posture, positions of eyes and shoulders will decrease (on y). If y value will decrease, a screen will be blurred and vice versa. That’s simple.
+        </p>
+        <p>
+          I drew pistures with incorrect positions:
         </p>
       </div>
       <img class="design_img" src="https://cdn.glitch.com/ec7ef02b-8dc9-4e3b-92c9-82124d3c2d83%2Fpictures.png?v=1567945516091">
+
 <!--   start with bluuuurrrrrrrrrrrr -->
       <div class="textblock">
         <h2>
           Blurrrrrrrrrrrrrrrrrrrr me baby please
         </h2>
         <p>
-          I created two functions. One <span onmouseover="highlightCode(this.id)" onmouseout="removeHighlight(this.id)" id="blurs">of them <span class="code_explain">blurs</span></span> the screen, the second one <span onmouseover="highlightCode(this.id)" onmouseout="removeHighlight(this.id)" id="removesblur" class="code_explain">removes blur</span>:
+          I started code with two functions. One <span onmouseover="highlightCode(this.id)" onmouseout="removeHighlight(this.id)" id="blurs">of them <span class="code_explain">blurs</span></span> the screen, the second one <span onmouseover="highlightCode(this.id)" onmouseout="removeHighlight(this.id)" id="removesblur" class="code_explain">removes blur</span>:
         </p>
       </div>
       <div class="code left_shadow" style="margin-bottom: 1em">
