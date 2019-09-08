@@ -184,6 +184,13 @@ img {
 }
 
 body {
+/*   display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: black; */
+}
+
+#container {
   display: flex;
   align-items: center;
   flex-direction: column;
