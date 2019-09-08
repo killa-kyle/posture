@@ -247,4 +247,16 @@ img {
     align-items: center;
   }
   
+  .design_img {
+    max-width: 600px;
+    min-width: 200px;
+  }
+  
+  #name_img img {
+    max-width: 220px;
+  }
+  
+  body {
+    font-size: 18px;
+  }
 }
