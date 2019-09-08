@@ -247,7 +247,7 @@
           It works like I wanted but doesn’t like I devised
         </h2>
         <p>
-          The next step was to detect all needed body parts: right and left eyes, shoulders, wrists, knees and ankles. I did it, but there was a not tiny problem. Sometimes, camera detected wallpapers, shoulders and my right breast as ankles or knees. .-. 
+          The next step was to detect all needed body parts: right and left eyes, shoulders, wrists, knees and ankles. I did it, but there was a not tiny problem. Sometimes, camera detected wallpapers, shoulders and my right breast as ankles or knees, hahaha. .-. 
         </p>
         <p>
           So, it worked unstable and I decided to start with eyes detection.
@@ -258,7 +258,7 @@
       </div>
       <div class="code right_shadow">
         <p> 
-          <span class="comment">//Position of eyes when after a human has pressed the button “start”. Default position.</span></br>
+          <span class="comment">//Position of eyes after a human has pressed the button “start”. Default position.</span></br>
         while (defaultRightEyePosition.length < 1) {</br>
           defaultRightEyePosition.push(rightEye.y);</br>
         }
@@ -270,7 +270,7 @@
           }
         </p>
         <p>
-          <span class="comment">//If the difference less than 15, it means a person is sitting with correct posture.</span>
+          <span class="comment">//If the difference less than 15, it means a person is sitting with correct posture.</span></br
           if (Math.abs(rightEye.y - defaultRightEyePosition[0]) < 15) {</br>
             removeBlur();</br>
           }</br>
