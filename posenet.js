@@ -39,6 +39,7 @@ function start() {
 function stop() {
   select('#startbutton').html('start')
   document.getElementById('startbutton').addEventListener('click', start);
+  removeBlur();
   started = false;
   noLoop();
 }
