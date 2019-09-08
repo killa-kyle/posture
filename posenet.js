@@ -27,10 +27,21 @@ function setup() {
   noLoop();
 }
 
-function start(){
-   select('#startbutton').html('stop')
-   started = true;
-   loop();
+// This function turns on AI
+function start() {
+  select('#startbutton').html('stop')
+  document.getElementById('startbutton').addEventListener('click', stop);
+  started = true;
+  loop();
+}
+
+// This function stops the experiment
+function stop() {
+  select('#startbutton').html('start')
+  started = false;
+  noLoop();
+  document.getElementById('startbutton').addEventListener('click', start);
+  console.log('dldl');
 }
 
 function draw() {
