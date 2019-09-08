@@ -223,6 +223,24 @@
           <a class="yellow a_righttext left_shadow" target="_blank" href="https://www.analyticsvidhya.com/blog/2019/06/build-machine-learning-model-in-your-browser-tensorflow-js-deeplearn-js/">Cool guide</a> how to work with everything above if you don't know
         </p>
       </div>
+      <div class="textblock">
+        <h2>
+          How to make it work?
+        </h2>
+        <p>
+          At first, I want to repeat that I used TensorFlow.js PoseNet model that tracks body parts and gives an array of parts’ positions (x, y).
+        </p>
+        <p>
+          I had two ways how to create this experiment:
+        </p>
+        <ul>
+          <li>Create a model and teach it understand when a human keeps incorrect position. This variant doesn't request PoseNet.</li>
+          <li>Ask a human to keep a correct posture, get their right position of eyes and shoulders. Then check new positions every second and compare it with first positions. Also, detect arms and legs if it will be in a camera view.</li>
+        </ul>
+        <p>
+          I chose the second one, because it’s easier and faster to do.
+        </p>
+      </div>
 <!--   start with bluuuurrrrrrrrrrrr -->
       <div class="textblock">
         <h2>
