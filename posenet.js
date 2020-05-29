@@ -19,7 +19,6 @@ function setup() {
   // with an array every time new poses are detected
   poseNet.on('pose', function(results) {
     poses = results;
-    
   });
   
   // Hide the video element, and just show the canvas
