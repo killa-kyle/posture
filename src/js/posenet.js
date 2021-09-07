@@ -3,6 +3,7 @@ let poseNet;
 let poses = [];
 var started = false;
 
+
 function setup() {
   const canvas = createCanvas(640, 480); // or use to make fullscreen canvas window.innerWidth, window.innerHeight, but you should to change the formula in changeFontSize()
   canvas.parent('videoContainer');
@@ -22,7 +23,7 @@ function setup() {
   });
   
   // Hide the video element, and just show the canvas
-  video.hide();
+  // video.hide();
   noLoop();
 }
 
@@ -55,6 +56,7 @@ function draw() {
 
 function modelReady(){
   // select('#text').html('Hmm... What is it? It’s time to move! AI has turned on. You can insert your text here.')
+  console.log('AI is on')
 }
 
 var rightEye, leftEye, rightShoulder, leftShoulder, rightWrist, leftWrist, rightKnee,
@@ -106,7 +108,7 @@ function drawEyes()  {
         noStroke();
         ellipse(rightEye.x, rightEye.y, 10, 10);
         ellipse(leftEye.x, leftEye.y, 10, 10);
-        console.log(Math.abs(rightEye.y - defaultRightEyePosition[0]));
+        // console.log(Math.abs(rightEye.y - defaultRightEyePosition[0]));
       }
     }
   }
